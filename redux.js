@@ -69,3 +69,7 @@ const reducers = combineReducers({
 const store = createStore(reducers)
 
 // dont forget to initialize data with its default data types (ie : [], or '', or an integer)
+
+store.dispatch(createPolicy('Alex'))
+store.dispatch(createClaim('Alex' , 100))
+store.dispatch(deletePolicy('Alex'))
